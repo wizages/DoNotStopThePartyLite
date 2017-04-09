@@ -1,0 +1,10 @@
+Package: com.jblounge.donotstop.lite
+Name: DoNotStopTheParty-lite
+Depends: mobilesubstrate
+Conflicts: com.jblounge.donotstop
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: wizage
+Author: wizage
+Section: Tweaks
