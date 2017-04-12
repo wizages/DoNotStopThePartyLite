@@ -30,19 +30,19 @@ Now that SpringBoard beleives we are real, we need to remind the app that we are
 
 So if you notice we skipped over some things in the code and here is where talk about this fun stuff!
 
-### BTServer - The bug the fooled us all.
+### BTServer - The bug that fooled us all
 
 This bug was our biggest hold up during this entire development process. This bug had to do with us sending XPC message to BTServer and BTServer didn't think the app was still alive. So how we prevented this was preventing all XPC messages being sent to BTServer. (This is a total hack and should be taken with a grain of salt. I am salty about this bug still. Don't bug me about it.)
 
-### iOS 9 App switcher bug
+### App Switcher Bug - iOS 9 bug
 
 This bug was just a matter of `launchd` not wanting the process to be deleted after it failed to delete the first time. We solved this by just remembering the last now playing pid and process name and than forcing that app to be deleted after it is told to shutdown
 
-### Lockscreen not updating bug
+### Lockscreen not updating bug - We want ColorFlow 3
 
 This bug had two parts, first we needed to send a notification saying that the nowplayinginfo changed so that the lockscreen would get the information. The second part was the fact that it didn't want to show the now playing screen. This was solved with some code that we wouldn't allow the lockscreen to find the view til it didn't equal null.
 
-## Demo
+## Demo and Notes
 
 [![Demo of our tweak](https://img.youtube.com/vi/CdpCcn4XR3c/0.jpg)](https://www.youtube.com/watch?v=CdpCcn4XR3c)
 
