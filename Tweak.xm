@@ -192,7 +192,7 @@ static void postMediaRemoteNotification() {
 
 %group iOS10
 %hook FBProcessManager
-//Addes the process back into the process list for iOS 10
+//Adds the process back into the process list for iOS 10
 - (id)_serviceClientAddedWithProcessHandle:(FBSProcessHandle *)processHandle {
     if (!currentNowPlayingBundleID) {
         return %orig;
@@ -218,7 +218,7 @@ static void postMediaRemoteNotification() {
 %end
 
 %group iOS9
-//Addes the process back into the process list for iOS 9
+//Adds the process back into the process list for iOS 9
 %hook FBProcessManager
 - (id)_serviceClientAddedWithPID:(int)pid isUIApp:(BOOL)isUIApp isExtension:(BOOL)isExte bundleID:(NSString *)bundleID {
     if (!currentNowPlayingBundleID) {

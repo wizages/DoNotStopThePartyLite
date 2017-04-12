@@ -1,10 +1,10 @@
-Package: com.jblounge.donotstop.lite
-Name: DoNotStopTheParty-lite
-Depends: mobilesubstrate
-Conflicts: com.jblounge.donotstop
-Version: 0.0.1
+Package: com.golddavid.dontstoptheparty.lite
+Name: Don't Stop The Party Lite
+Depends: firmware (>= 9.0), mobilesubstrate (>= 0.9.5.000)
+Conflicts: com.golddavid.dontstoptheparty
+Version: 0.0.1~lite
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
-Maintainer: wizage
-Author: wizage
+Description: Apple music during resprings
+Maintainer: David Goldman <help@golddavid.com>
+Author: David Goldman, Wizages <wizagesmax@gmail.com>
 Section: Tweaks
