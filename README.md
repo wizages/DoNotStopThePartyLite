@@ -1,4 +1,4 @@
-# Do Not Stop The Party
+# Don't Stop The Party
 
 ## How does this work?
 
@@ -42,12 +42,12 @@ This bug was just a matter of `launchd` not wanting the process to be deleted af
 
 This bug had two parts, first we needed to send a notification saying that the nowplayinginfo changed so that the lockscreen would get the information. The second part was the fact that it didn't want to show the now playing screen. This was solved with some code that we wouldn't allow the lockscreen to find the view til it didn't equal null.
 
-##Demo
+## Demo
 
 [![Demo of our tweak](https://img.youtube.com/vi/CdpCcn4XR3c/0.jpg)](https://www.youtube.com/watch?v=CdpCcn4XR3c)
 
 Please note that the Demo and process described above is a general overview of the full version. The lite version does most of the same things but only applies it to the Apple Music app.
 
-##License
+## License
 
 See License File
