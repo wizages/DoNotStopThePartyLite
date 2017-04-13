@@ -4,7 +4,7 @@
 
 ### Step One - Prevent the app from killing itself
 
-First off we must prevent the app from dieing when SpringBoard is killed. When SpringBoard is lost all the apps want to do is shutdown. So we don't allow this to happen on the now playing app. We do this by preventing the `clientSystemApplicationTerminated:` from running. When we prevent the app from terminating itself we also setup a notification that we should receive later that will allow us to reconnect us to SpringBoard. More this will be explained in Step Five.
+First off we must prevent the app from being terminated when SpringBoard is killed. When SpringBoard is lost all the apps want to do is shutdown. So we don't allow this to happen on the now playing app. We do this by preventing the `clientSystemApplicationTerminated:` from running. When we prevent the app from terminating itself we also setup a notification that we should receive later that will allow us to reconnect us to SpringBoard. More this will be explained in Step Five.
 
 ### Step Two - Prevent SpringBoard from killing the app
 
@@ -24,7 +24,7 @@ After we told SpringBoard the app is real and is still running, the app now has 
 
 ### Step Six - Lets give our app some scenes
 
-Now that SpringBoard beleives we are real, we need to remind the app that we are still valid to show views. So we flash the app in the foreground and than throw it in the background where it belongs. This pretty much tells the app when we launch the app we want a valid FBScene and we want want it now! After that we put it where it should be which is in the background so we don't waste your battery. Now you have a fully reconnected app and you have officially survived the respring!
+Now that SpringBoard believes we are real, we need to remind the app that we are still valid to show views. So we flash the app in the foreground and then throw it in the background where it belongs. This pretty much tells the app when we launch the app we want a valid FBScene and we want want it now! After that we put it where it should be which is in the background so we don't waste your battery. Now you have a fully reconnected app and you have officially survived the respring!
 
 ## Weird quirks and things we had to patch along the way
 
@@ -36,7 +36,7 @@ This bug was our biggest hold up during this entire development process. This bu
 
 ### App Switcher Bug - iOS 9 bug
 
-This bug was just a matter of `launchd` not wanting the process to be deleted after it failed to delete the first time. We solved this by just remembering the last now playing pid and process name and than forcing that app to be deleted after it is told to shutdown
+This bug was just a matter of `launchd` not wanting the process to be deleted after it failed to delete the first time. We solved this by just remembering the last now playing pid and process name and then forcing that app to be deleted after it is told to shutdown
 
 ### Lockscreen not updating bug - We want ColorFlow 3
 
