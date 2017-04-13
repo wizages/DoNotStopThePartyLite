@@ -1,4 +1,5 @@
 # Don't Stop The Party
+By [wizages](https://twitter.com/Wizages "Wizage's twitter account") & [David Goldman](https://twitter.com/DavidJGoldman "David Golman's twitter account")
 
 ## How does this work?
 
